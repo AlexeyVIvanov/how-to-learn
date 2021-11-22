@@ -11,10 +11,12 @@ div {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  /* ставим все блоки друг над другом */
-  flex-direction: column;
-  min-height: 100vh;
+  /* мой коммент ниже ставим все блоки друг над другом */
+  /*flex-direction: column;
+  min-height: 100vh;*/
 }
+
+
 
 .header {
   height: 100vh;
@@ -23,52 +25,78 @@ div {
   /* выше установили ограничения для секции */
   background-color:#f2f2f2;
   display: flex;
+  align-items: center;
+  position: relative;
+
+  color: #000000;
   }
 
 .logo {
-  display: flex;
+  position: absolute;
   width: 183px;
   height: 32px;
 }
 
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
 .header__title {
-  display: flex;
+  position: absolute;
+  align-items: center;
   width: 730px;
+  left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 500;
+  z-index: 2;
 }
 
 .header__subtitle {
-  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
   width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
 }
 
-
 .header__main-illustration {
-  display: flex;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   width: 765px;
   height: 608px;
-  background-size: cover;
+  /*background-size: cover;*/
+  z-index: 1;
 }
 
 .header__square-pic {
-  display: flex;
+  position: absolute;
+  top: 64px;
+  right: 0px;
   background-color:  #2f80ed;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
   width: 568px;
   height: 568px;
 }
-
+/*
 .flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-}
+}*/
 
 .content {
   display: flex;
-  /* прижимаем футер к низу страницы */
+  /*  мой коммент прижимаем футер к низу страницы */
   flex: 1;
   /* выравниваем блок внутри родит.блока */
   justify-content: center;
@@ -77,15 +105,56 @@ div {
   flex-direction: column;
 }
 
+/*                  Блок 2 Дескрипшен                */
+
 .description {
   display: flex;
   /* выравниваем блок внутри родит.блока */
   justify-content: center;
   align-items: center;
   /* выравниваем блок внутри родит.блока */
+
+}
+
+.two-columns {
+  display: flex;
+  /* выравниваем блок внутри родит.блока */
   justify-content: center;
   align-items: center;
+  /* выравниваем блок внутри родит.блока */
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
 }
+
+.two-columns__brief {
+
+}
+
+.two-columns__main-text {
+  display: flex;
+  /* выравниваем блок внутри родит.блока */
+  justify-content: center;
+  align-items: center;
+  /* выравниваем блок внутри родит.блока */
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.two-columns__paragraph {
+
+}
+
+.span-accent {
+
+}
+
+
+
+/*  ----------------------------------------- */
 
 .digits {
   display: flex;
