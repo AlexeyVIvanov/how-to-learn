@@ -87,10 +87,6 @@
 .header__link {
   color: #2f80ed;
 }
-
-.content {
-
-}
 /*------------------------------Блок 2 Дескрипшен---------------------------------*/
 .description {
   /* выравниваем блок внутри родит.блока (в вебинаре сказали не надо) */
@@ -340,7 +336,7 @@
 }
 
 .footer__column-heading {
-  margin: 0 0 20px ;
+  margin: 0 0 20px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
