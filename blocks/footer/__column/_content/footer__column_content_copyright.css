@@ -1,6 +1,6 @@
 .footer__column_content_copyright {
-  flex-direction: column-reverse;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-basis: 711px;
 }
